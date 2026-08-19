@@ -17,7 +17,10 @@
     },
     "build": {
       "openclawVersion": "2026.7.1-2"
-    }
+    },
+    "extensions": [
+      "./dist/index.js"
+    ]
   },
   "description": "OpenClaw 插件:DeepSeek/OpenAI/Anthropic 缓存命中统计(pi-cache-optimizer 算法移植)",
   "files": [
