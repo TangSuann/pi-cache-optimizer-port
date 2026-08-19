@@ -1,0 +1,32 @@
+{
+  "name": "@xiaoma/pi-cache-optimizer-port",
+  "version": "0.1.0",
+  "type": "module",
+  "private": false,
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test test/"
+  },
+  "openclaw": {
+    "runtimeExtensions": [
+      "./dist/index.js"
+    ],
+    "compat": {
+      "pluginApi": ">=2026.3.24-beta.2",
+      "minGatewayVersion": "2026.7.1-2"
+    },
+    "build": {
+      "openclawVersion": "2026.7.1-2"
+    }
+  },
+  "description": "OpenClaw 插件:DeepSeek/OpenAI/Anthropic 缓存命中统计(pi-cache-optimizer 算法移植)",
+  "files": [
+    "dist/",
+    "src/",
+    "openclaw.plugin.json",
+    "README.md",
+    "package.json",
+    "tsconfig.json"
+  ],
+  "main": "dist/index.js"
+}

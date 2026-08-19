@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ES2022"],
+    "types": ["node"],
+    "typeRoots": ["/home/gmkjie/.npm-global/lib/node_modules/openclaw/node_modules/@types"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "paths": {
+      "openclaw/plugin-sdk/plugin-entry": ["./types/openclaw-plugin-sdk-stub.d.ts"]
+    }
+  },
+  "include": ["src/**/*.ts"]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "pi-cache-optimizer-port",
+  "name": "Pi Cache Optimizer Port",
+  "description": "Ports the remaining pi-cache-optimizer cache-stability items onto OpenClaw native plugin hooks: stable-prefix reorder, session churn strip, skills compression, and persisted per-provider/model cache stats.",
+  "version": "0.1.0",
+  "runtimeExtensions": ["./dist/index.js"],
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "enabled": { "type": "boolean", "default": true },
+      "reorder": { "type": "boolean", "default": true },
+      "stripSessionOverview": { "type": "boolean", "default": true },
+      "compressSkills": { "type": "boolean", "default": true },
+      "collectStats": { "type": "boolean", "default": true },
+      "statsPath": { "type": "string" }
+    }
+  },
+  "compat": {
+    "pluginApi": ">=2026.3.24-beta.2",
+    "minGatewayVersion": "2026.7.1-2"
+  }
+}
