@@ -1,5 +1,5 @@
 {
-  "name": "@xiaoma/pi-cache-optimizer-port",
+  "name": "pi-cache-optimizer-port",
   "version": "0.1.0",
   "type": "module",
   "private": false,
